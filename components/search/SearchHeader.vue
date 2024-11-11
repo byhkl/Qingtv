@@ -15,9 +15,6 @@ const emit = defineEmits(['search'])
 const search = () => {
   emit('search', searchKeyword.value)
 }
-const goGithub = () => {
-  window.open('https://github.com/unilei/aipan-netdisk-search.git')
-}
 const colorMode = useColorMode()
 
 console.log(colorMode.preference)
@@ -32,7 +29,7 @@ console.log(colorMode.preference)
           <img class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] cursor-pointer" src="@/assets/my-logo.png" alt="logo"
             @click="goHome()">
           <h1 class="hidden md:block text-sm font-bold cursor-pointer text-gray-700 dark:text-white" @click="goHome()">
-            爱盼-网盘资源搜索</h1>
+            轻盘搜 - 网盘资源搜索</h1>
         </div>
         <div class="w-[220px] md:w-[400px]">
           <client-only>
@@ -47,13 +44,7 @@ console.log(colorMode.preference)
             <el-button v-if="colorMode.preference === 'dark'" link @click="colorMode.preference = 'light'">
               <img class="w-[20px] h-[20px]" src="@/assets/theme/entypo--light-up.svg" alt="">
             </el-button>
-            <el-button v-if="colorMode.preference === 'light'" link @click="colorMode.preference = 'dark'">
-              <img class="w-[20px] h-[20px]" src="@/assets/theme/icon-park-solid--dark-mode.svg" alt="">
-            </el-button>
           </client-only>
-          <el-button link @click="goGithub()">
-            <img class="w-[20px] h-[20px]" src="@/assets/skill-icons--github-dark.svg" alt="github">
-          </el-button>
         </div>
 
       </div>
