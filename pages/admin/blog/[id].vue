@@ -143,9 +143,6 @@ onMounted(async () => {
                 <nuxt-link to="/admin/blog/new" v-if="!isEdit">添加博客</nuxt-link>
                 <nuxt-link :to="'/admin/blog/' + route.params.id" v-else>编辑博客</nuxt-link>
             </div>
-            <div>
-                <el-button type="primary" @click="submit">提交</el-button>
-            </div>
         </div>
         <div class="mt-6">
             <el-form ref="formRef" :model="form" label-width="auto">
