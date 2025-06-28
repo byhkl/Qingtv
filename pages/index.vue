@@ -44,7 +44,8 @@ onMounted(async () => {
   }
 })
 </script>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9757133857818321"
+     crossorigin="anonymous"></script>
 <template>
   <div class="bg-[#f5f6f9] custom-bg dark:bg-gray-800  min-h-screen py-[60px]">
     <!-- <div class=" bg-slate-100 p-2 fixed top-14 left-0 right-0 z-[999] dark:bg-gray-800">
