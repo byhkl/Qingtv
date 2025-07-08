@@ -42,30 +42,6 @@ onMounted(async () => {
     doubanData.value = doubanStore.doubanData
     doubanCache.value = 'aipan.me'
   }
-  
-  // 动态加载Google Adsense脚本
-  const adsbygoogle = document.createElement('script')
-  adsbygoogle.async = true
-  adsbygoogle.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9757133857818321'
-  adsbygoogle.crossOrigin = 'anonymous'
-  document.head.appendChild(adsbygoogle)
-  
-  // 动态加载51.la统计脚本
-  const laCollect = document.createElement('script')
-  laCollect.charset = 'UTF-8'
-  laCollect.id = 'LA_COLLECT'
-  laCollect.src = '//sdk.51.la/js-sdk-pro.min.js'
-  laCollect.onload = function() {
-    // 初始化统计代码
-    window.LA = window.LA || {}
-    window.LA.init = window.LA.init || function(options) {
-      // 这里实现LA.init的逻辑，或者直接调用原函数
-      // 由于无法直接访问原始LA.init，这里简单模拟
-      console.log('51.la initialized with options:', options)
-    }
-    window.LA.init({id:"3MiCO8W1cSbap9If",ck:"3MiCO8W1cSbap9If"})
-  }
-  document.head.appendChild(laCollect)
 })
 </script>
 <template>
