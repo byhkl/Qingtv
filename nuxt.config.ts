@@ -24,7 +24,7 @@ export default defineNuxtConfig({
             title: '轻盘搜：资源随心，娱乐无限',
             meta: [
                 { name: 'keywords', content: '轻盘搜, 开源, 免费资源搜索, 网盘搜索, 音乐下载, TVBox数据接口, 电视直播, 博客发布, 影视资源, 教学工具, 非商业用途' },
-                { hid: 'description', name: 'description', content: '轻盘搜是一个开源免费的资源搜索平台，提供网盘资源搜索、音乐下载、TV直播、TVBox接口地址以及博客发布等多项功能，打造丰富的影视音聚合体验，供学习与探索使用，不支持商业用途。' },
+                { key: 'description', name: 'description', content: '轻盘搜是一个开源免费的资源搜索平台，提供网盘资源搜索、音乐下载、TV直播、TVBox接口地址以及博客发布等多项功能，打造丰富的影视音聚合体验，供学习与探索使用，不支持商业用途。' },
                 { name: 'format-detection', content: 'telephone=no' },
                 { property: 'og:title', content: '轻盘搜：资源随心，音乐下载与影视聚合平台' },
                 { property: 'og:description', content: '轻盘搜是一个开源免费的资源搜索平台，提供网盘、音乐、影视等多种资源，一站式服务，供学习使用。' },
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
                     src: 'https://challenges.cloudflare.com/turnstile/v0/api.js'
                 },
                 {
-                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8210373406341452',
+                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9757133857818321',
                     async: true,
                     crossorigin: 'anonymous'
                 }
