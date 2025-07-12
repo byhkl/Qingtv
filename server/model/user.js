@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import prisma from "~/lib/prisma";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 const config = useRuntimeConfig();
 const JWT_SECRET = config.jwtSecret; // 从环境变量中读取 JWT 密钥
